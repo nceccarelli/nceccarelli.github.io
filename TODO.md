@@ -1,6 +1,7 @@
 # To do
 
-* Yellow text for links
+* Fix Personal Statement & Skills so auto-resizing occurs. 
+  * This issue is related to the table in the skills section - shrink or redesign it
 * Add tCS to experience
 * Add Ox to experience 
 * Proofread
