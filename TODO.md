@@ -1,4 +1,3 @@
 # To do
 
-* Add tCS to experience
-* Add more projects
+* Add logging capabilities
