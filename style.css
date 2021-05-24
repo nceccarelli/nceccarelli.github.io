@@ -12,3 +12,9 @@ td {
     font-weight: lighter;
 }
 a {color: yellow; font-style: italic;}
+.tab { 
+    margin-left: 40px; 
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
