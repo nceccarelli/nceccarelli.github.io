@@ -18,7 +18,6 @@ const Hello = () => div({
     display: 'flex'
   })
 },
-
   div({
     style: style({
       flex: 1,
