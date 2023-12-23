@@ -1,7 +1,7 @@
 import van from "vanjs-core"
 import style from "./utils/style"
 
-const { a, div, li, p, ul, i, h1, h2, img } = van.tags
+const { a, div, li, p, ul, i, h1, h2, img, table, th, tbody, tr } = van.tags
 
 const BACKGROUND_COLOR = '#002431'
 
@@ -51,6 +51,35 @@ const Hello = () => div({
       })
     },
       i("Senior AI Applications Engineer")
+    ),
+    p({
+      style: style({
+        color: 'white'
+      })
+    },
+      "TODO: AI description"
+    ),
+    table(
+      tbody(
+        tr(
+          th(
+            a({
+              href: 'res/files/ceccarelli_resume.pdf',
+              target: '_blank'
+            },
+              img({
+                src: './res/icons/resume.png',
+                style: style({
+                  width: '50px'
+                })
+              })
+            )
+          ),
+          th(
+            "TODO: NEXT"
+          )
+        )
+      )
     )
   ),
 )
