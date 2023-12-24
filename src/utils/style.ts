@@ -7,7 +7,6 @@ const myFormatToCSS = (str: string) => {
 const style = (dict: any) => {
     var styleStr = ""
     for (const [key, value] of Object.entries(dict)) {
-        console.log(key, value);
         var fmtKey = myFormatToCSS(key)
         styleStr += (fmtKey + ':' + String(value) + ';')
     }
