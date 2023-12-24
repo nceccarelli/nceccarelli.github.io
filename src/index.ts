@@ -19,7 +19,10 @@ const routes = [
 ];
 
 // create the spa object
-const routerElement = div({ id: 'layout' })
+const routerElement = div({ id: 'layout', style: style({
+  // height: '100vh',
+  width: '100%',
+}) })
 const { navLink } = createCone(routerElement, routes)
 
 // main app layout
@@ -28,17 +31,20 @@ const App = () =>
     style: style({
       paddingTop: '10px',
       backgroundColor: BACKGROUND_COLOR,
+      height: '100vh',
       width: '100vw',
       position: 'fixed',
       top: 0,
       left: 0,
     })
   },
+  routerElement,
+  hr(),
     span({style: style({
       color: 'white',
       paddingLeft: '10px',
       fontSize: 'large'
-    })},'About me:'),
+    })},'More about me:'),
     NavItem({
       navLink: navLink,
       navName: 'home',
@@ -49,8 +55,8 @@ const App = () =>
       navName: 'skills',
       pageName: 'Skills'
     }),
-    hr(),
-    routerElement
+    // hr(),
+    // routerElement
   );
 
 document.body.replaceChildren(App());
