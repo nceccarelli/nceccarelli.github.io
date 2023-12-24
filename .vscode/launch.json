@@ -7,16 +7,5 @@
             "request": "launch",
             "command": "npm run dev",
         }
-        // , {
-        //     "name": "Debug full stack",
-        //     "type": "node-terminal",
-        //     "request": "launch",
-        //     "command": "npm run dev",
-        //     "serverReadyAction": {
-        //         "pattern": "started server on .+, url: (https?://.+)",
-        //         "uriFormat": "%s",
-        //         "action": "debugWithChrome"
-        //     }
-        // }
     ]
 }

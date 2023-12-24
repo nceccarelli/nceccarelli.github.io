@@ -1,9 +1,9 @@
-import createCone from './context';
+import createCone from './vanCone';
 import van from 'vanjs-core';
 import Skills from './skills';
 import Home from './home';
 import style from './utils/style';
-import NavItem from './components/nav-item';
+import NavMenu from './components/nav-menu';
 const { div, p, span, hr, i } = van.tags;
 
 const BACKGROUND_COLOR = '#002431'
@@ -19,10 +19,13 @@ const routes = [
 ];
 
 // create the spa object
-const routerElement = div({ id: 'layout', style: style({
-  // height: '100vh',
-  width: '100%',
-}) })
+const routerElement = div({
+  id: 'layout', style: style({
+    height: 'calc(100vh - 65px)',
+    width: '100%',
+    overflowY: 'auto'
+  })
+})
 const { navLink } = createCone(routerElement, routes)
 
 // main app layout
@@ -38,25 +41,12 @@ const App = () =>
       left: 0,
     })
   },
-  routerElement,
-  hr(),
-    span({style: style({
-      color: 'white',
-      paddingLeft: '10px',
-      fontSize: 'large'
-    })},'More about me:'),
-    NavItem({
-      navLink: navLink,
-      navName: 'home',
-      pageName: 'Home'
+
+    routerElement,
+    hr(),
+    NavMenu({
+      navLink: navLink
     }),
-    NavItem({
-      navLink: navLink,
-      navName: 'skills',
-      pageName: 'Skills'
-    }),
-    // hr(),
-    // routerElement
   );
 
 document.body.replaceChildren(App());

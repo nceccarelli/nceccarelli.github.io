@@ -12,15 +12,8 @@ const BACKGROUND_COLOR = '#002431'
 // Reusable components can be just pure vanilla JavaScript functions.
 // Here we capitalize the first letter to follow React conventions.
 const Home = () => div({
+    id: 'home',
     style: style({
-        // height: '100%',
-        // width: '100%'
-        // height: '100vh',
-        // width: '100vw',
-        // backgroundColor: BACKGROUND_COLOR,
-        // position: 'fixed',
-        // top: 4,
-        // left: 0,
         display: 'flex'
     })
 },
