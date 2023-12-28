@@ -6,7 +6,7 @@ import style from './utils/style';
 import NavMenu from './components/nav-menu';
 import Education from './education';
 import Experience from './experience';
-const { div, p, span, hr, i } = van.tags;
+const { div, hr, } = van.tags;
 
 const BACKGROUND_COLOR = '#002431'
 

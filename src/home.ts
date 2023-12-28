@@ -5,9 +5,7 @@ import H1 from "./components/h1"
 import H2 from "./components/h2"
 import P from "./components/p"
 
-const { a, div, li, p, ul, i, h1, h2, img, table, th, tbody, tr, hr, nav, span } = van.tags
-
-const BACKGROUND_COLOR = '#002431'
+const { div, i, img, } = van.tags
 
 // Reusable components can be just pure vanilla JavaScript functions.
 // Here we capitalize the first letter to follow React conventions.

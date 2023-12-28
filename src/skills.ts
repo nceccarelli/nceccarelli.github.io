@@ -1,11 +1,9 @@
 import van from "vanjs-core"
-import style from "./utils/style"
 import Li from "./components/li"
 import H2 from "./components/h2"
-import P from "./components/p"
 import H3 from "./components/h3"
 
-const { a, div, li, p, ul, i, h1, h2, img, table, th, tbody, tr, hr } = van.tags
+const { div, ul, } = van.tags
 
 // TODO: Add more. There are more that didnt fit on my resume
 

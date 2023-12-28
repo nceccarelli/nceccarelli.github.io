@@ -1,15 +1,12 @@
 import van from "vanjs-core"
-import style from "./utils/style"
 import Li from "./components/li"
 import H2 from "./components/h2"
-import P from "./components/p"
 import H3 from "./components/h3"
-import IndentP from "./components/indented-div"
 import IndentDiv from "./components/indented-div"
 import BoldSpan from "./components/bold-span"
 import Span from "./components/span"
 
-const { a, div, li, p, ul, i, h1, h2, img, table, th, tbody, tr, hr, span, br } = van.tags
+const { div, ul, br } = van.tags
 
 // TODO: Should I make the font a sans-serif?
 

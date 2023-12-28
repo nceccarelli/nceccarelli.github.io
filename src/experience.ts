@@ -1,14 +1,12 @@
 import van from "vanjs-core"
-import style from "./utils/style"
 import Li from "./components/li"
 import H2 from "./components/h2"
-import P from "./components/p"
 import H3 from "./components/h3"
 import ItalicSpan from "./components/italic-span"
 import Span from "./components/span"
 import IndentDiv from "./components/indented-div"
 
-const { a, div, li, p, ul, i, h1, h2, img, table, th, tbody, tr, hr, br } = van.tags
+const { div, ul, br } = van.tags
 
 // Reusable components can be just pure vanilla JavaScript functions.
 // Here we capitalize the first letter to follow React conventions.
