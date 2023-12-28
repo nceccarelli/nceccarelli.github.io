@@ -28,6 +28,16 @@ const NavMenu = ({
         navName: 'skills',
         pageName: 'Skills'
     }),
+    NavItem({
+        navLink: navLink,
+        navName: 'education',
+        pageName: 'Education'
+    }),
+    NavItem({
+        navLink: navLink,
+        navName: 'experience',
+        pageName: 'Experience'
+    }),
 )
 
 export default NavMenu;

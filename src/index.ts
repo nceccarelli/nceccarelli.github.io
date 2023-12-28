@@ -4,6 +4,8 @@ import Skills from './skills';
 import Home from './home';
 import style from './utils/style';
 import NavMenu from './components/nav-menu';
+import Education from './education';
+import Experience from './experience';
 const { div, p, span, hr, i } = van.tags;
 
 const BACKGROUND_COLOR = '#002431'
@@ -11,11 +13,15 @@ const BACKGROUND_COLOR = '#002431'
 // define page components
 const homePage = () => Home()
 const skills = () => Skills()
+const education = () => Education()
+const experience = () => Experience()
 
 // define routes
 const routes = [
   { path: '/', name: 'home', callable: async () => homePage },
-  { path: '/skills', name: 'skills', callable: async () => skills }
+  { path: '/skills', name: 'skills', callable: async () => skills },
+  { path: '/education', name: 'education', callable: async () => education },
+  { path: '/experience', name: 'experience', callable: async () => experience },
 ];
 
 // create the spa object
@@ -23,7 +29,9 @@ const routerElement = div({
   id: 'layout', style: style({
     height: 'calc(100vh - 65px)',
     width: '100%',
-    overflowY: 'auto'
+    overflowY: 'auto',
+    paddingLeft: '10px',
+    paddingRight: '10px'
   })
 })
 const { navLink } = createCone(routerElement, routes)
