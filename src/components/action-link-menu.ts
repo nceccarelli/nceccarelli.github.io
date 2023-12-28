@@ -13,20 +13,20 @@ const ActionLinkMenu = () => table({
     tbody(
         tr(
             ActionLink({
-                href: 'res/files/ceccarelli_resume.pdf',
-                imageSrc: './res/icons/resume.png'
+                href: 'public/files/ceccarelli_resume.pdf',
+                imageSrc: './public/icons/resume.png'
             }),
             ActionLink({
                 href: 'mailto:njceccarelli@gmail.com',
-                imageSrc: './res/icons/email.png'
+                imageSrc: './public/icons/email.png'
             }),
             ActionLink({
                 href: 'http://www.linkedin.com/in/nceccarelli',
-                imageSrc: './res/icons/linkedin.png'
+                imageSrc: './public/icons/linkedin.png'
             }),
             ActionLink({
                 href: 'http://www.github.com/nceccarelli',
-                imageSrc: './res/icons/github.png'
+                imageSrc: './public/icons/github.png'
             }),
         )
     )

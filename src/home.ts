@@ -23,7 +23,7 @@ const Home = () => div({
         })
     },
         img({
-            src: './res/profile.jpg',
+            src: './public/profile.jpg',
             style: style({
                 width: '100%'
             })
