@@ -14,7 +14,7 @@ const NavMenu = ({
     span({
         style: style({
             color: 'white',
-            paddingLeft: '10px',
+            paddingLeft: '5px',
             fontSize: 'large',
             fontFamily: 'sans-serif',
         })
