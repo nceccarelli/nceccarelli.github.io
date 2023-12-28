@@ -53,9 +53,9 @@ const Education = () => div(
       Li("Algorithms"),
     ),
     
-    // TODO: Add BU scholarship
     H3("Awards"),
     ul(
+      Li("Boston University Merit Scholarship"),
       Li("Engineering Honor Society"),
       Li("Dean's List"),
       Li("Grace W. Capen Scholar"),
