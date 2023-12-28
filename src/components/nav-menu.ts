@@ -17,7 +17,7 @@ const NavMenu = ({
             paddingLeft: '10px',
             fontSize: 'large'
         })
-    }, 'More about me:'),
+    }, 'About me:'),
     NavItem({
         navLink: navLink,
         navName: 'home',
