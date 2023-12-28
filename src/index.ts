@@ -31,7 +31,9 @@ const routerElement = div({
     width: '100%',
     overflowY: 'auto',
     paddingLeft: '10px',
-    paddingRight: '10px'
+    paddingRight: '10px',
+    fontFamily: 'sans-serif',
+    color: 'white',
   })
 })
 const { navLink } = createCone(routerElement, routes)

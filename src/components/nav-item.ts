@@ -15,6 +15,7 @@ const NavItem = ({
     style: style({
         paddingLeft: '5px',
         paddingRight: '5px',
+        fontFamily: 'sans-serif',
         fontStyle: 'italic',
         color: 'white',
         fontSize: 'large'

@@ -1,11 +1,8 @@
 import van from "vanjs-core"
 import style from "./utils/style"
 import ActionLinkMenu from "./components/action-link-menu"
-import H1 from "./components/h1"
-import H2 from "./components/h2"
-import P from "./components/p"
 
-const { div, i, img, } = van.tags
+const { div, i, img, h1, h2, p } = van.tags
 
 // Reusable components can be just pure vanilla JavaScript functions.
 // Here we capitalize the first letter to follow React conventions.
@@ -36,13 +33,13 @@ const Home = () => div({
             padding: '10px'
         })
     },
-        H1(
+        h1(
             "Nicholas Ceccarelli"
         ),
-        H2(
+        h2(
             i("Senior AI Applications Engineer")
         ),
-        P(
+        p(
             "Passionate Software Engineer focusing on developing cutting-edge AI-centric applications. I've built a full-stack web-based chat application leveraging Next.js and ChatGPT 4, and have honed my skills in Langchain and Visual Studio extension development. My experience extends to IoT platform development, utilizing Kubernetes, Azure IoT Edge modules in C# and Python housed in Docker containers, and creating iOS apps with SwiftUI. I'm also proficient in managing Azure Infrastructure using Terraform. Always on the lookout for the next challenge to drive the future of AI and IoT technologies."
         ),
         ActionLinkMenu(),

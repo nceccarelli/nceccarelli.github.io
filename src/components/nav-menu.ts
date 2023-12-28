@@ -15,7 +15,8 @@ const NavMenu = ({
         style: style({
             color: 'white',
             paddingLeft: '10px',
-            fontSize: 'large'
+            fontSize: 'large',
+            fontFamily: 'sans-serif',
         })
     }, 'About me:'),
     NavItem({

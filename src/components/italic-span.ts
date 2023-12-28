@@ -6,7 +6,6 @@ const ItalicSpan = (
     content: any 
 ) => span({
     style: style({
-        color: 'white',
         fontSize: 'large',
         fontStyle: 'italic'
     })

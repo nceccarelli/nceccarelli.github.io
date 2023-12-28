@@ -6,7 +6,6 @@ const IndentDiv = (
     content: any 
 ) => div({
     style: style({
-        color: 'white',
         fontSize: 'large',
         paddingLeft: '20px'
     })

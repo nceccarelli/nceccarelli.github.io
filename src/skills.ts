@@ -1,71 +1,68 @@
 import van from "vanjs-core"
-import Li from "./components/li"
-import H2 from "./components/h2"
-import H3 from "./components/h3"
 
-const { div, ul, } = van.tags
+const { div, ul, h2, h3, li } = van.tags
 
 // TODO: Add more. There are more that didnt fit on my resume
 
 // Reusable components can be just pure vanilla JavaScript functions.
 // Here we capitalize the first letter to follow React conventions.
 const Skills = () => div(
-    H2("Skills"),
+    h2("Skills"),
 
-    H3("Languages"),
+    h3("Languages"),
     ul(
-      Li("JavaScript"),
-      Li("Python"),
-      Li("C#"),
-      Li("Java"),
-      Li("Swift"),
-      Li("C++"),
-      Li("C"),
+      li("JavaScript"),
+      li("Python"),
+      li("C#"),
+      li("Java"),
+      li("Swift"),
+      li("C++"),
+      li("C"),
     ),
 
-    H3("Enterprise Skills"),
+    h3("Enterprise Skills"),
     ul(
-      Li("Agile & SAFe Development"),
-      Li("Unit & Integration Testing"),
-      Li("Azure DevOps (incl. CI/CD pipelines)"),
+      li("Agile & SAFe Development"),
+      li("Unit & Integration Testing"),
+      li("Azure DevOps (incl. CI/CD pipelines)"),
     ),
 
-    H3("Frameworks & Environments"),
+    h3("Frameworks & Environments"),
     ul(
-      Li("Next.js"),
-      Li("React"),
-      Li("Langchain"),
+      li("Next.js"),
+      li("React"),
+      li("Langchain"),
     ),
 
-    H3("Azure technologies"),
+    h3("Azure technologies"),
     ul(
-      Li("OpenAI"),
-      Li("Function Apps"),
-      Li("Web Apps"),
-      Li("AI Search"),
-      Li("IoT Hub"),
-      Li("CosmosDB"),
-      Li("Storage Account"),
+      li("OpenAI"),
+      li("Function Apps"),
+      li("Web Apps"),
+      li("AI Search"),
+      li("IoT Hub"),
+      li("CosmosDB"),
+      li("Storage Account"),
     ),
 
-    H3("Other technologies"),
+    h3("Other technologies"),
     ul(
-      Li("Kubernetes"),
-      Li("Docker"),
-      Li("Terraform"),
-      Li("Terragrunt"),
-      Li("Dapr"),
-      Li("Helm"),
-      Li("Git Version Control"),
-      Li("Bash Scripts"),
+      li("Kubernetes"),
+      li("Docker"),
+      li("Terraform"),
+      li("Terragrunt"),
+      li("Dapr"),
+      li("Helm"),
+      li("Git Version Control"),
+      li("Bash Scripts"),
     ),
 
-    H3("Also proficient in"),
+    h3("Also proficient in"),
     ul(
-      Li("System Design"),
-      Li("Team Management"),
-      Li("Collaboration"),
-      Li("Communication"),
+      li("System Design"),
+      li("Team Management"),
+      li("Collaboration"),
+      li("Communication"),
     ),
   )
 
