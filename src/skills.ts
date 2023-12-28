@@ -67,7 +67,7 @@ const Skills = () => div(
       Li("System Design"),
       Li("Team Management"),
       Li("Collaboration"),
-      Li("Communication "),
+      Li("Communication"),
     ),
   )
 
