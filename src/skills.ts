@@ -2,8 +2,6 @@ import van from "vanjs-core"
 
 const { div, ul, h2, h3, li } = van.tags
 
-// TODO: Add more. There are more that didnt fit on my resume
-
 // Reusable components can be just pure vanilla JavaScript functions.
 // Here we capitalize the first letter to follow React conventions.
 const Skills = () => div(
